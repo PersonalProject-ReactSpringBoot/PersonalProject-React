@@ -10,7 +10,6 @@ const Login = () => {
     const login = () => {
         axios.post('/api/login', {id:id, password:password})
         .then((res) => {
-            console.log(res.data);
             navigate('/Board');
         });
     }
